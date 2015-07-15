@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!--image dimensions for card: 200px X 150px-->
+<!--begin of head-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="author" content="Deepankar Agrawal">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon">-->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <title>Xebia - Online Quiz</title>
+    <style>
+        .quiz_margin{
+            margin: 35px 41px 7px 0px;
+        }
+        .content_margin{
+            margin: 0px 0px 0px 0px;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<!--end of Head-->
+
+<!--begin of Body-->
+<body style="background-color:#8c267b;">
+
+<!--Begin header-->
+<nav>
+    <div class="nav-wrapper" style="background-color: #8c267b;">
+        <a href="#!" class="brand-logo">
+            <img src="images/logo.png" style="max-width: 22%; height:auto; margin-top:9px; margin-left: 12px;" class="responsive-img hide-on-small-only"/>
+            <img src="images/logo.png" style="max-width: 51%; height:auto; margin-top:9px; margin-left: 57px;" class="responsive-img hide-on-large-only"/>
+
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li style="margin-right: 20px; font-size: 17px;">Deepankar Agrawal</li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="register.html">Add Quiz</a></li>
+            <li><a href="about.html">Edit Quiz Manager Site</a></li>
+        </ul>
+    </div>
+</nav>
+<!--end Header-->
+
+<!--Begin Content-->
+<main>
+    <div class="content_margin">
+        <!--Begin First Row-->
+        <div class="row">
+            <div class="col s2 m2 l2 z-depth-2 hide-on-med-and-down " style="background-color:#8c267b; height:558px;">
+                <ul class="collection with-header" style="background-color:#8c267b; margin-top: 50px;">
+                    <li class="collection-item flow-text white-text" style="background-color:#8c267b;">Admin Panel</li>
+                    <a href="#!" class="collection-item active">Home</a>
+                    <a href="#!" class="collection-item">Add Quiz</a>
+                    <a href="#!" class="collection-item">Edit Quiz Manager Site</a>
+                </ul>
+            </div>
+            <div class="col s12 m12 l10 z-depth-2" style="height:558px; max-height: 100%;">
+                <div id="MainContent" class="white" style="margin-top: 12px; height:530px; position: relative;">
+                    <!--Whenever you add something in the div add the postion :absolute for now as it will remain in the MainContent div-->
+                    Hello World
+                </div>
+            </div>
+
+        </div>
+        <!--End First Row-->
+    </div>
+
+</main>
+<!--end Content-->
+
+
+
+<!-- Login Modal Structure -->
+<div id="login" class="modal">
+    <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="mdi-action-account-circle prefix"></i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Email ID</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="mdi-action-lock prefix"></i>
+                        <input id="icon_telephone" type="password" class="validate">
+                        <label for="icon_telephone">Password</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+    </div>
+</div>
+<!--end of modal-->
+
+</body>
+<!--end of Body-->
+
+<!--Begin of Script Section-->
+<script>
+
+    //responsive initialization
+    $(".button-collapse").sideNav();
+
+    //Tooltip initialization
+    $(document).ready(function(){
+        $('.tooltipped').tooltip({delay: 50});
+    });
+
+    //Modal Initialization
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!--End of Script Section-->
+</html>

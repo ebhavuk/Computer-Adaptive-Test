@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="author" content="Deepankar Agrawal">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon">
+    <title>Quiz Maker</title>
+    <style>
+        .switch_form{
+            margin:0px 0px 0px 0px;
+        }
+        .register_form{
+            margin:41px 0px 22px 0px;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Begin header-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Quiz Name</a>
+        </div>
+    </nav>
+    <!--end Header-->
+
+    <!--Main Content of the page-->
+    <main>
+
+        <div class="row register_form">
+            <div class="col m4 s2 card-panel"></div>
+            <form class="col m4 s8 card-panel teal" action="registeration.html" method="get">
+                <div class="row">
+                    <div class="col m10 s10 white-text"><h4>Ques 1</h4></div>
+                    <div class="col m1 s1"></div>
+                    <div class="col m1 s1"></div>
+                </div>
+                <div class="row white-text">
+                    <div class="input-field col m1 s1"></div>
+                    <div class="input-field col m10 s10 white-text">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea white-text"></textarea>
+                            <label for="textarea1" class="white-text">Question</label>
+                        </div>
+                    </div>
+                    <div class="input-field col m1 s1"></div>
+                </div>
+
+                <!--Switch for Radio or Row-->
+                <div class="row" style="margin:0px 0px 19px 66px;">
+                    <div class="col s1 m1"></div>
+                    <div class="col s10 m10 center-align switch_form">
+                        <div class="switch">
+                            <label class="white-text">
+                                One Answer
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Multiple Answer
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col s1 m1"></div>
+                </div>
+                <!--End for Radio or Row-->
+                <!--Begin for Single Answer Div-->
+                <div id="single-option">
+                    <div class="row" style="margin:0px 0px 25px 13px;">
+                        <div class="col s1 m1"></div>
+                        <div class="input-field col m5 s5 white-text center-align">
+                            <input class="with-gap" name="group1" type="radio" id="option1"  />
+                            <label for="option1" class="white-text">
+                                <input id="option-text-1" type="text" class="validate white-text">
+                                <label for="option-text-1" class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;Option 1</label>
+                            </label>
+                        </div>
+                        <div class="input-field col m5 s5 white-text center-align">
+                            <input class="with-gap" name="group1" type="radio" id="option2"  />
+                            <label for="option2" class="white-text">
+                                <input id="option-text-2" type="text" class="validate white-text">
+                                <label for="option-text-2" class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;Option 2</label>
+                            </label>
+                        </div>
+                        <div class="col s1 m1"></div>
+                    </div>
+                    <div class="row" style="margin:0px 0px 25px 13px;">
+                        <div class="col s1 m1"></div>
+                        <div class="input-field col m5 s5 white-text center-align">
+                            <input class="with-gap" name="group1" type="radio" id="option3"  />
+                            <label for="option3" class="white-text">
+                                    <input id="option-text-3" type="text" class="validate white-text">
+                                    <label for="option-text-3" class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;Option 3</label>
+                            </label>
+                        </div>
+                        <div class="input-field col m5 s5 white-text center-align">
+                            <input class="with-gap" name="group1" type="radio" id="option4"  />
+                            <label for="option4" class="white-text">
+                                <input id="option-text-4" type="text" class="validate white-text">
+                                <label for="option-text-4" class="white-text">&nbsp;&nbsp;&nbsp;&nbsp;Option 4</label>
+                            </label>
+                        </div>
+                        <div class="col s1 m1"></div>
+                    </div>
+                </div>
+                <!--End of Single Answer Div-->
+
+                <div class="row">
+                    <div class="col s12 m12"></div>
+                </div>
+                <div class="row" style="margin:38px 0px 22px 0px;">
+                    <div class="col m12 s12 center-align"> <button class="btn waves-effect waves-light pink" type="submit">Next
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                    </div>
+                </div>
+            </form>
+            <div class="col m4 s2 card-panel"></div>
+        </div>
+
+
+
+    </main>
+    <!--End of Main Content-->
+
+    <!--Begin Footer-->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">UPES-CSI Student Chapter</h5>
+                    <p class="grey-text text-lighten-4">Hello world the content goes in here in rows and columns</p>
+                </div>
+                <div class="col l4 s12" style="overflow: hidden;">
+                    <h5 class="white-text">Connect with us</h5>
+
+                    <a href="https://twitter.com/upescsi" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @upescsi</a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Developed and Maintained by UPES-CSI Student Chapter  &copy; 2015-2016
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/" target="_blank">Developed using materializecss</a>
+            </div>
+        </div>
+    </footer>
+    <!--end Footer-->
+
+
+</body>
+    <!--Begin of Script Section-->
+    <script>
+
+        //responsive initialization
+        $(".button-collapse").sideNav();
+
+        //Tooltip initialization
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 50});
+        });
+
+        //Modal Initialization
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!--End of Script Section-->
+
+</html>

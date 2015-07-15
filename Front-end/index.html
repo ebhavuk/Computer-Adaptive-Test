@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<!--image dimensions for card: 200px X 150px-->
+<!--begin of head-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="author" content="Deepankar Agrawal">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <!--<link id="page_favicon" href="favicon.ico" rel="icon" type="image/x-icon">-->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <title>Xebia - Online Quiz</title>
+    <style>
+        .quiz_margin{
+            margin: 35px 41px 7px 0px;
+        }
+        .content_margin{
+            margin: 0px 0px 0px 11px;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<!--end of Head-->
+
+<!--begin of Body-->
+<body>
+
+    <!--Begin header-->
+    <nav>
+        <div class="nav-wrapper" style="background-color: #8c267b;">
+            <a href="#!" class="brand-logo">
+                <img src="images/logo.png" style="max-width: 22%; height:auto; margin-top:9px; margin-left: 12px;" class="responsive-img hide-on-small-only"/>
+                <img src="images/logo.png" style="max-width: 51%; height:auto; margin-top:9px; margin-left: 57px;" class="responsive-img hide-on-large-only"/>
+
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#login" class="modal-trigger">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--end Header-->
+
+    <!--Begin Content-->
+    <main>
+        <div class="content_margin">
+            <!--Begin First Row-->
+                <div class="row">
+
+                    <!--Begin Column-->
+                        <div class="quiz_margin col s5 m2">
+                            <!--Begin Card-->
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/image.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                        <p><a href="information.html">One Line for Quiz</a></p>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                        <p>12:00 AM</p>
+                                        <div class="row">
+                                            <div class="col s6 m6">
+                                                <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                            </div>
+                                            <div class="col s6 m6">
+                                                <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s6 m6">
+                                                <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                            </div>
+                                            <div class="col s6 m6">
+                                                <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            <!--End card-->
+                        </div>
+                    <!--End Column-->
+
+                    <!--Begin Column-->
+                    <div class="quiz_margin col s5 m2">
+                        <!--Begin Card-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/office.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="information.html">One Line for Quiz</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                <p>12:00 AM</p>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End card-->
+                    </div>
+                    <!--End Column-->
+
+                    <!--Begin Column-->
+                    <div class="quiz_margin col s5 m2">
+                        <!--Begin Card-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/office.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="information.html">One Line for Quiz</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                <p>12:00 AM</p>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End card-->
+                    </div>
+                    <!--End Column-->
+
+                    <!--Begin Column-->
+                    <div class="quiz_margin col s5 m2">
+                        <!--Begin Card-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/office.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="information.html">One Line for Quiz</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                <p>12:00 AM</p>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End card-->
+                    </div>
+                    <!--End Column-->
+
+                    <!--Begin Column-->
+                    <div class="quiz_margin col s5 m2">
+                        <!--Begin Card-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/office.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="information.html">One Line for Quiz</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                <p>12:00 AM</p>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End card-->
+                    </div>
+                    <!--End Column-->
+
+                    <!--Begin Column-->
+                    <div class="quiz_margin col s5 m2">
+                        <!--Begin Card-->
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/office.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Quiz Name<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="information.html">One Line for Quiz</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Quiz Name<i class="mdi-navigation-close right"></i></span>
+                                <p>12:00 AM</p>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="participate.html"><i class="small mdi-av-play-arrow tooltipped" data-position="top" data-delay="50" data-tooltip="Participate"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="ranking.html"><i class="small mdi-av-equalizer tooltipped" data-position="top" data-delay="50" data-tooltip="Ranking"></i></a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s6 m6">
+                                        <div><a href="reminder.html"><i class="small mdi-device-access-alarm tooltipped" data-position="top" data-delay="50" data-tooltip="Send me a reminder"></i></a></div>
+                                    </div>
+                                    <div class="col s6 m6">
+                                        <div><a href="information.html"><i class="small mdi-action-info-outline tooltipped" data-position="top" data-delay="50" data-tooltip="Information"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End card-->
+                    </div>
+                    <!--End Column-->
+            </div>
+        <!--End First Row-->
+        </div>
+    </main>
+    <!--end Content-->
+
+    <!--Begin Footer-->
+    <footer class="page-footer" style="background-color: #8c267b;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Xebia India</h5>
+                    <span class="grey-text text-lighten-4">
+                        612 Park Centra , Sector 30 <br>
+                        Gurgaon 122002 Haryana <br>
+                        Phone: +91 (0124) 470 0200<br>
+                        Email: infoindia@xebia.com</span>
+                </div>
+                <div class="col l4 s12" style="overflow: hidden;">
+                    <h5 class="white-text">Connect with us</h5>
+
+                    <a href="https://twitter.com/Xebia" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @upescsi</a>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Developed and Maintained by Xebia India  &copy; 2015-2016
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/" target="_blank">Developed using materializecss</a>
+            </div>
+        </div>
+    </footer>
+    <!--end Footer-->
+
+    <!-- Login Modal Structure -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix"></i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Email ID</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-action-lock prefix"></i>
+                            <input id="icon_telephone" type="password" class="validate">
+                            <label for="icon_telephone">Password</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+        </div>
+    </div>
+    <!--end of modal-->
+
+</body>
+<!--end of Body-->
+
+<!--Begin of Script Section-->
+    <script>
+
+        //responsive initialization
+        $(".button-collapse").sideNav();
+
+        //Tooltip initialization
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 50});
+        });
+
+        //Modal Initialization
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        });
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!--End of Script Section-->
+</html>
