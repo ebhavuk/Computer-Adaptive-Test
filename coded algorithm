@@ -1,4 +1,4 @@
-package abhirup.khanna;
+package cat.algorithm;
 
 import java.util.Scanner;
 
