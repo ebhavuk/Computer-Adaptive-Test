@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cat.xebia.services.CATService;
@@ -43,11 +44,12 @@ public class SpringMVCController {
 
 	}
 
-	@RequestMapping(value = "/insertques/{question}/{questionlevel}/{option1}/{option2}/{option3}/{option4}/{answer}/{category}")
+	@RequestMapping(value = "/insertques/{question}/{questionlevel}/{option1}/{option2}/{option3}/{option4}/{answer}/{category}", method=RequestMethod.GET)
 	public @ResponseBody String enterques(@PathVariable String question, @PathVariable String questionlevel,
 			@PathVariable String option1, @PathVariable String option2, @PathVariable String option3, @PathVariable String option4, @PathVariable String answer ,@PathVariable String category) {
 		return restService.insertques(question, questionlevel, option1, option2, option3,option4,answer,category);
 
 	}
+
 
 }

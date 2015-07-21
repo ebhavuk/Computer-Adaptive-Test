@@ -3,6 +3,9 @@ package cat.xebia.dao;
 import java.util.List;
 import java.util.Map;
 
+import org.codehaus.jackson.map.util.JSONPObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -26,9 +29,10 @@ public class CatDAOImpl implements CatDAO {
 		String sql1 = "INSERT INTO `user`(`name`,`username`, `email`,  `password`,`organisation`) VALUES ('" + name
 				+ "','" + username + "','" + email + "','" + password + "','" + organisation + "')";
 		jdbcTemplate.execute(sql1);
-		String done = "Inserted";
-		return done;
-
+		JSONObject jo = new JSONObject();
+		jo.put("Status", "Success");			
+		return jo.toString();	
+		
 	}
 
 	@Override
