@@ -1,0 +1,5 @@
+@CHARSET "ISO-8859-1";
+
+mroot>*[mathsize="big"] {
+  font-size: 62%  /* (.50 times 1.25) */
+}
