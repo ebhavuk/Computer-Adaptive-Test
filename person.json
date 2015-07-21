@@ -1,0 +1,24 @@
+{
+"person": [
+  {
+"rank": "1",
+"names": "Clark",
+"tmarks": "56",
+"temail": "clark@gmail.com",
+"tstatus": "Passed"
+},
+{
+"rank": "2",
+"names": "Pattinson",
+"tmarks": "46",
+"temail": "pattinson@gmail.com",
+"tstatus": "Passed"
+},
+{
+"rank": "3",
+"names": "Narendra Modi",
+"tmarks": "96",
+"temail": "namo@gmail.com",
+"tstatus": "Passed"
+}]
+}
