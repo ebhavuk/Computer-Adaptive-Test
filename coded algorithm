@@ -2,7 +2,7 @@ package abhirup.khanna;
 
 import java.util.Scanner;
 
-public class DecisionEngine {
+public class DecisionEngine extends decision {
 
 	static int num_level,questions_level,num_students,Min_Ques_To_Attempt,Current_Level,min_pass_marks,total_num_categories,i,T;
 	static String a="";
@@ -67,19 +67,6 @@ public class DecisionEngine {
 	public static void input()
 	{
 		
-				for(int p=0;p<5;++p)
-				{
-					for(int q=0;q<questions_level;++q)
-					{
-						System.out.println("Enter the question");
-						QB[p][q]=sc.next();
-						System.out.println("Enter the answer");
-						AB[p][q]=sc.next();
-						
-					}//q
-						
-				}//p
-				
 			System.out.println("Enter the number of marks per question with respect to a level:");
 				
 				for(int z=0;z<num_level;++z)
