@@ -55,6 +55,7 @@
                     <div class="col m1 s1"></div>
                     <div class="col m1 s1"></div>
                 </div>
+
                 <div class="row white-text">
                     <div class="input-field col m1 s1"></div>
                     <div class="input-field col m10 s10 white-text">
@@ -64,6 +65,17 @@
                     </div>
                     <div class="input-field col m1 s1"></div>
                 </div>
+
+                <div class="row white-text">
+                    <div class="input-field col m1 s1"></div>
+                    <div class="input-field col m10 s10 white-text">
+                        <i class="mdi-action-account-circle prefix white-text"></i>
+                        <input id="username" type="text" class="validate" name="username">
+                        <label for="username" class="white-text">Username</label>
+                    </div>
+                    <div class="input-field col m1 s1"></div>
+                </div>
+
                 <div class="row">
                     <div class="input-field col m1 s1"></div>
                     <div class="input-field col m10 s10 white-text">
@@ -73,15 +85,17 @@
                     </div>
                     <div class="input-field col m1 s1"></div>
                 </div>
+
                 <div class="row">
                     <div class="input-field col m1 s1"></div>
                     <div class="input-field col m10 s10 white-text">
                         <i class="mdi-action-account-balance prefix white-text"></i>
-                        <input id="university" type="text" class="validate" name="university">
-                        <label for="university" class="white-text">University</label>
+                        <input id="organization" type="text" class="validate" name="organization">
+                        <label for="organization" class="white-text">Organization</label>
                     </div>
                     <div class="input-field col m1 s1"></div>
                 </div>
+
                 <div class="row">
                     <div class="input-field col m1 s1"></div>
                     <div class="input-field col m10 s10 white-text">
@@ -91,8 +105,9 @@
                     </div>
                     <div class="input-field col m1 s1"></div>
                 </div>
+
                 <div class="row">
-                    <div class="col m12 s12" align="center"> <button class="btn waves-effect waves-light pink" type="submit">Register
+                    <div class="col m12 s12" align="center"> <button id="registerButton" class="btn waves-effect waves-light pink" type="submit">Register
                         <i class="mdi-content-send right"></i>
                     </button>
                     </div>
@@ -160,6 +175,33 @@
 </body>
         <!--Begin of Script Section-->
         <script>
+
+            $('form button').on("click",function(e){
+                e.preventDefault;
+                return false;
+            });
+
+            $("#registerButton").on("click",function(e){
+
+                var fullname =  $("#full_name").val();
+                var username =  $("#username").val();
+                var emailID =   $("#email_id").val();
+                var organization = $("#organization").val();
+                var password =  $("#password").val();
+
+                var url = "http://10.10.20.173:8081/xebia/signup/"+fullname+"/"+username+"/"+emailID+"/"+organization+"/"+password;
+                url = encodeURI(url);
+                alert(url);
+
+                $.ajax({url: url,
+                    complete: function(result)
+                    {
+                        var obj = jQuery.parseJSON(result);
+                        alert(obj);
+                        //alert("Hello");
+                    }
+                });
+            });
 
             //responsive initialization
             $(".button-collapse").sideNav();
