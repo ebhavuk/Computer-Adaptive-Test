@@ -29,8 +29,6 @@ public class SpringMVCController {
 		return "index";
 	}
 
-
-
 	@RequestMapping(value = "/getpassword/{username}")
 	public @ResponseBody List<Map<String, Object>> Login(@PathVariable String username) {
 		return restService.getPassword(username);
@@ -44,12 +42,19 @@ public class SpringMVCController {
 
 	}
 
-	@RequestMapping(value = "/insertques/{question}/{questionlevel}/{option1}/{option2}/{option3}/{option4}/{answer}/{category}", method=RequestMethod.GET)
+	@RequestMapping(value = "/insertques/{question}/{questionlevel}/{option1}/{option2}/{option3}/{option4}/{answer}/{category}", method = RequestMethod.GET)
 	public @ResponseBody String enterques(@PathVariable String question, @PathVariable String questionlevel,
-			@PathVariable String option1, @PathVariable String option2, @PathVariable String option3, @PathVariable String option4, @PathVariable String answer ,@PathVariable String category) {
-		return restService.insertques(question, questionlevel, option1, option2, option3,option4,answer,category);
+			@PathVariable String option1, @PathVariable String option2, @PathVariable String option3,
+			@PathVariable String option4, @PathVariable String answer, @PathVariable String category) {
+		return restService.insertques(question, questionlevel, option1, option2, option3, option4, answer, category);
 
 	}
 
+	@RequestMapping(value = "/nextques/{question}/{questionlevel}/{category}", method = RequestMethod.GET)
+	public @ResponseBody List<Map<String, Object>> nextques(@PathVariable String question, @PathVariable String questionlevel,
+			@PathVariable String answer, @PathVariable String category) {
+		return restService.nextques(question, questionlevel, answer, category);
+
+	}
 
 }

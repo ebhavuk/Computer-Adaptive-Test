@@ -3,8 +3,6 @@ package cat.xebia.dao;
 import java.util.List;
 import java.util.Map;
 
-import org.codehaus.jackson.map.util.JSONPObject;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

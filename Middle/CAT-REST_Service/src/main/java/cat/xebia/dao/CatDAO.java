@@ -7,8 +7,6 @@ public interface CatDAO {
 	
 	List<Map<String, Object>> getPassword(String username);
 
-	
-
 	String signUp(String name,String username, String email, String organisation, String password);
 
 	String insertques(String question, String questionlevel, String option1, String option2,
